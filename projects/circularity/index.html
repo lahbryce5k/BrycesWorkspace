@@ -35,6 +35,16 @@
                 init(window);
                 window.opspark.makeGame();
             })();
+            ````javascript
+            // TODO 1: Declare our variables //
+                var circle;			//
+                var circles = [];	//
+                // Code to draw a circle
+                    circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
+                    physikz.addRandomVelocity(circle, canvas);
+                    view.addChild(circle);
+                    circles.push(circle);
+                    
         </script>
     </body>
 
