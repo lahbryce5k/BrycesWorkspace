@@ -23,7 +23,7 @@ var init = function (window) {
         var circle;
         var circles = [];
 
-        // TODO 2 : Create a function that draws a circle 
+        // TODO 2 : Create a function that draws a circle
 
         // Code to draw a circle
 
@@ -39,7 +39,7 @@ var init = function (window) {
 
 
 
-        // TODO 3 / 7 : Call the drawCircle() function 
+        // TODO 3 / 7 : Call the drawCircle() function
 
 
 
@@ -56,10 +56,10 @@ var init = function (window) {
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
 
-        /* 
+        /*
         This Function is called 60 times/second producing 60 frames/second.
         In each frame, for every circle, it should redraw that circle
-        and check to see if it has drifted off the screen.         
+        and check to see if it has drifted off the screen.        
         */
         function update() {
             // TODO 4 : Update the circle's position //
@@ -87,8 +87,8 @@ var init = function (window) {
 
         }
 
-        /* 
-        This Function should check the position of a circle that is passed to the 
+        /*
+        This Function should check the position of a circle that is passed to the
         Function. If that circle drifts off the screen, this Function should move
         it to the opposite side of the screen.
         */
