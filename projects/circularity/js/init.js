@@ -11,7 +11,7 @@ var init = function (window) {
         view = app.view,
         fps = draw.fps('#000');
        
-   
+        
     window.opspark.makeGame = function() {
        
         window.opspark.game = {};
@@ -35,10 +35,10 @@ var init = function (window) {
 
         // TODO 3 / 7 : Call the drawCircle() function
 
-       var counter = 0;
-       while (counter < 100){
-        drawCircle();
-        counter++;
+        var counter = 0;
+        while (counter < 100){
+            drawCircle();
+            counter++;
        }
 
         ////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ var init = function (window) {
             for(var i = 0; circles.length >i; i++){
              physikz.updatePosition(circles[i]);
              game.checkCirclePosition(circles[i]);
-           }
+            }
            
         }
    
@@ -129,8 +129,9 @@ var init = function (window) {
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
-if((typeof process !== 'undefined') &&
+    if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
     // here, export any references you need for tests //
-    module.exports = init;
-}
+    module.exports = init; 
+
+    }
