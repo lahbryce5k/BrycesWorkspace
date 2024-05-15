@@ -25,9 +25,6 @@ var init = function (window) {
 
         // TODO 2 : Create a function that draws a circle
 
-        // Code to draw a circle
-
-
         function drawCircle() {
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
             physikz.addRandomVelocity(circle, canvas, 35, 40);
@@ -83,6 +80,11 @@ var init = function (window) {
             // game.checkCirclePosition(circles[4]);
             // game.checkCirclePosition(circles[5]);
             // TODO 9 : Iterate over the array
+                for( var i = 0; circles.length >i; i++) {
+                    physikz.updatePosition(circles[i]);
+                    game.checkCirclePosition(circles[i]);
+
+                }
 
 
         }
@@ -93,7 +95,10 @@ var init = function (window) {
         it to the opposite side of the screen.
         */
         game.checkCirclePosition = function (circle) {
-            //console.log({circle})
+        
+
+
+
             // if the circle has gone past the RIGHT side of the screen then assign it to be on the LEFT
             if (circle.x > canvas.width) {
                 circle.x = 0;
