@@ -65,19 +65,6 @@ var init = function (window) {
                 game.checkCirclePosition(eachCircle);
             }
            
-            // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            // game.checkCirclePosition(circles[1]);
-            // game.checkCirclePosition(circles[2]);
-            // game.checkCirclePosition(circles[3]);
-            // game.checkCirclePosition(circles[4]);
-            // game.checkCirclePosition(circles[5]);
-           
-
-            // TODO 9 : Iterate over the array
-            for(var i = 0; circles.length >i; i++){
-             physikz.updatePosition(circles[i]);
-             game.checkCirclePosition(circles[i]);
-            }
            
         }
    
@@ -129,9 +116,8 @@ var init = function (window) {
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
-    if((typeof process !== 'undefined') &&
+if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
     // here, export any references you need for tests //
-    module.exports = init; 
-
-    }
+    module.exports = init
+    }}}
